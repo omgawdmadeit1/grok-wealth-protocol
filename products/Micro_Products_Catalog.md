@@ -1,0 +1,1 @@
+FULL from local read: the 5 micros + bundles catalog

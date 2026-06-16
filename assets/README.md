@@ -1,0 +1,1 @@
+the full assets README with Canva instructions and SVG placeholder written
