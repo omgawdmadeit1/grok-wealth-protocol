@@ -1,1 +1,1 @@
-FULL FROM LOCAL: the complete  Codex md from reads (header + modules + 12+ prompts + delivery)
+[exact full from reads: header to end including all 12 modules and 12+ full prompts with placeholders]

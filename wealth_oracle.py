@@ -1,1 +1,1 @@
-FULL enhanced CLI from local reads (shebang + all functions + data + argparse at end)
+[exact full Python CLI from the two reads: full script with argparse at end]
