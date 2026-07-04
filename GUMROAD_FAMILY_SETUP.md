@@ -1,1 +1,1 @@
-[Gumroad exact setup for family bundle - see local]
+[See local file for complete Gumroad step-by-step for launching the Family Wealth Codex bundle passively]
