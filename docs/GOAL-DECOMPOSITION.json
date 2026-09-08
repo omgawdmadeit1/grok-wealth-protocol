@@ -1,0 +1,69 @@
+{
+  "protocol": "grok-wealth-protocol-v2",
+  "updated": "2026-09-08",
+  "root_goal": {
+    "statement": "Comfortable middle-class security for a family of four: $100k+ household run-rate as design target, benefits protected, health first, time for memories, shared work, travel that is memory or self-funding fieldwork.",
+    "success_criteria": [
+      "SSI/Medicaid/SNAP intact or intentionally transitioned via approved PASS",
+      "Books match real accounts",
+      "12-month path to $50-80k run-rate visible by day 365",
+      "24-month path to $100k+ or equivalent security",
+      "Weekly memory block kept >= 75% of weeks",
+      "Spouse can run the system on a bad-pain week"
+    ],
+    "constraints": ["low-physical", "SSI_PASS_protection", "truth_ledger_only", "no_live_leveraged_trading_as_rent"]
+  },
+  "phases": [
+    {
+      "id": "P0",
+      "name": "Floor",
+      "days": "1-7",
+      "tasks": [
+        {"id": "P0-1", "title": "Truth ledger current balances only", "owner": "books", "done_when": "finance/TRUTH_LEDGER.md has dated real numbers"},
+        {"id": "P0-2", "title": "File unclaimed property searches", "owner": "floor", "done_when": "at least GA + prior states submitted or documented none"},
+        {"id": "P0-3", "title": "PASS conversation booked / digital request sent", "owner": "floor", "done_when": "confirmation number or sent email saved"},
+        {"id": "P0-4", "title": "Trust + term life consult booked", "owner": "floor", "done_when": "calendar event"},
+        {"id": "P0-5", "title": "Four Wednesday memory blocks on calendar", "owner": "family-os", "done_when": "shared calendar"}
+      ]
+    },
+    {
+      "id": "P1",
+      "name": "One lane",
+      "days": "8-30",
+      "depends_on": ["P0"],
+      "tasks": [
+        {"id": "P1-1", "title": "Choose Lane A capital, B catalog, or C research", "owner": "supervisor", "done_when": "written choice in ledger"},
+        {"id": "P1-2", "title": "First filed packet in that lane", "owner": "capital|catalog|research", "done_when": "portal receipt"}
+      ]
+    },
+    {
+      "id": "P2",
+      "name": "Proof",
+      "days": "31-60",
+      "depends_on": ["P1"],
+      "tasks": [
+        {"id": "P2-1", "title": "First real dollar non-countable or PASS-parked", "owner": "books", "done_when": "bank line item"},
+        {"id": "P2-2", "title": "529 open + first contribution or written defer", "owner": "floor", "done_when": "account number"}
+      ]
+    },
+    {
+      "id": "P3",
+      "name": "Decide",
+      "days": "61-90",
+      "depends_on": ["P2"],
+      "tasks": [
+        {"id": "P3-1", "title": "Kill losing lanes in writing", "owner": "supervisor", "done_when": "update to PROTOCOL_V2 kill list"},
+        {"id": "P3-2", "title": "12-month plan spouse-runnable", "owner": "supervisor", "done_when": "docs/12-MONTH-PLAN.md exists"}
+      ]
+    }
+  ],
+  "uhi_track": {
+    "xai_spacex_enrollment": "does_not_exist_publicly_2026-09-08",
+    "actions": [
+      "monitor Stanford Basic Income Lab dashboard",
+      "email UNG/UGA as rural community partner",
+      "email GRO / Freedom Futures as liaison not youth slot",
+      "do not apply to Anthropic fund as individual"
+    ]
+  }
+}
